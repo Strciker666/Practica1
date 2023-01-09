@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potencias de dos</title>
+</head>
+<body>
+    <script>
+        var num1;
+
+        num1 = prompt("Ingrese el numero limite de potencias de 2:");
+
+        var list = [];
+        for (let i = 0; i < num1; i++) {
+            list += (Math.pow(2, i) + ", ");
+        }
+        console.log(list);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de masa corporal</title>
+</head>
+<body>
+    <script>
+        var estatura;
+        var peso;
+        var edad;
+
+        estatura = prompt("Ingrese su estatura:");
+        peso = prompt("Ingrese su peso:");
+        edad = prompt("Ingrese su edad:");
+
+        var imc = (peso / Math.pow(estatura, 2));
+
+        console.log(imc);
+
+        if (imc < 22 && edad < 45) {
+            console.log("Riesgo bajo");
+        } else if (imc < 22 && edad >= 45 || imc >= 22 && edad < 45) {
+            console.log("Riesgo medio");
+        } else if (imc >= 22 && edad >= 45) {
+            console.log("Riesgo alto");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo de viaje</title>
+</head>
+<body>
+    <script>
+        let tramos = [];
+        let duracion;
+        let total = 0;
+        var hora;
+        var minutos;
+
+        while (duracion !=0) {
+            duracion = prompt("Ingrese la duracion del tramo:");
+            tramos.push(duracion);
+        }
+        tramos.forEach(function(numero) {
+            total = (parseInt(total) + parseInt(numero));
+        })
+
+        hora = Math.floor(total / 60);
+        minutos = Math.floor((total % 60));
+        console.log("Tiempo total de viaje: "+ hora + ":" + minutos + " horas");
+    </script>
+</body>
+</html>
